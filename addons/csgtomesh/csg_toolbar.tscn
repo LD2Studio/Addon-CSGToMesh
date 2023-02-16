@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://8ug8h2435yrb"]
+
+[ext_resource type="Script" path="res://addons/csgtomesh/csg_toolbar.gd" id="1_lavqh"]
+
+[node name="CSG Toolbar" type="MenuButton"]
+visible = false
+text = "CSG Mesh"
+script = ExtResource("1_lavqh")
+
+[node name="SaveMeshResourceDialog" type="FileDialog" parent="."]
+
+[connection signal="file_selected" from="SaveMeshResourceDialog" to="." method="_on_save_mesh_resource_dialog_file_selected"]

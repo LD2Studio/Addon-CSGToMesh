@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cngranc6xrfod"]
+
+[node name="Demo" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.549696, 0.447601, 0.477278)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
